@@ -9,7 +9,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/login',
+      path: '/',
       name: 'login',
       component:import('../views/Auth/Login.vue'),
       meta: { alreadyAuth: true },
@@ -28,7 +28,7 @@ const router = createRouter({
     },
 
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: () => import('../views/HomeView.vue'),
       meta: { requiresAuth: true },
@@ -44,7 +44,7 @@ router.beforeEach(async (to, from) => {
     useUserStore().initUser(auth.data);
     if(!auth.data) {
       return {
-        path: '/login',
+        path: '/',
         // save the location we were at to come back later
         // query: { redirect: to.fullPath },
       }

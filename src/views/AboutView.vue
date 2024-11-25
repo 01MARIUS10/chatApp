@@ -18,7 +18,7 @@ let userStore = useUserStore();
 const deconnection = async () => {
 	signout().then((r) => {
 		console.log(r);
-		if (r.status) router.push("/login")
+		if (r.status) router.push("/")
 	})
 }
 
