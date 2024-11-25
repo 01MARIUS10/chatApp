@@ -46,7 +46,7 @@ router.beforeEach(async (to, from) => {
       return {
         path: '/login',
         // save the location we were at to come back later
-        query: { redirect: to.fullPath },
+        // query: { redirect: to.fullPath },
       }
     }
   }
@@ -57,7 +57,7 @@ router.beforeEach(async (to, from) => {
       return {
         path: '/about',
         // save the location we were at to come back later
-        query: { redirect: to.fullPath },
+        // query: { redirect: to.fullPath },
       }
     }
   }
