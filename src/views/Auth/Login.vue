@@ -64,7 +64,7 @@ onMounted(() => {
 <template>
   <AuthLayerVue>
     <template v-slot:image>
-      <img class="h-full" src="/public/image/logoM.png" alt="">
+      <img class="h-full" src="/image/logoM.png" alt="">
     </template>
 
     <template v-slot:content>

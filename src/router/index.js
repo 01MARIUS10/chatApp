@@ -41,6 +41,7 @@ router.beforeEach(async (to, from) => {
 
   if (to.meta.requiresAuth){
     const auth = await currentUser();
+    console.log("AUTH ROUTE",auth,auth.data)
     useUserStore().initUser(auth.data);
     if(!auth.data) {
       return {

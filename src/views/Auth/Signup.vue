@@ -61,7 +61,7 @@ const optCode = ref("");
 		<template v-slot:image>
 			<img
 				class="h-full"
-				src="/public/image/logoM.png"
+				src="/image/logoM.png"
 				alt=""
 			/>
 		</template>
@@ -143,7 +143,7 @@ const optCode = ref("");
 		<template v-slot:image>
 			<img
 				class="h-full"
-				src="/public/image/fete.png"
+				src="/image/fete.png"
 				alt=""
 			/>
 		</template>
